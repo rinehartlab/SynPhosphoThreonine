@@ -1,0 +1,270 @@
+TrimmomaticPE: Started with arguments:
+ -threads 8 -phred33 ../../../../input/CA1/CA1_r1.fastq ../../../../input/CA1/CA1_r2.fastq CA1_r1_trim_paired.fastq CA1_r1_trim_unpaired.fastq CA1_r2_trim_paired.fastq CA1_r2_trim_unpaired.fastq HEADCROP:3 SLIDINGWINDOW:2:30
+Input Read Pairs: 91711 Both Surviving: 72347 (78.89%) Forward Only Surviving: 10633 (11.59%) Reverse Only Surviving: 5779 (6.30%) Dropped: 2952 (3.22%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 8 -phred33 ../../../../input/CA1/CA1_r1.fastq ../../../../input/CA1/CA1_r2.fastq CA1_r1_trim_paired.fastq CA1_r1_trim_unpaired.fastq CA1_r2_trim_paired.fastq CA1_r2_trim_unpaired.fastq HEADCROP:3 SLIDINGWINDOW:2:25
+Input Read Pairs: 91711 Both Surviving: 81781 (89.17%) Forward Only Surviving: 6441 (7.02%) Reverse Only Surviving: 2611 (2.85%) Dropped: 878 (0.96%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 8 -phred33 ../../../../input/CA1/CA1_r1.fastq ../../../../input/CA1/CA1_r2.fastq CA1_r1_trim_paired.fastq CA1_r1_trim_unpaired.fastq CA1_r2_trim_paired.fastq CA1_r2_trim_unpaired.fastq HEADCROP:3 SLIDINGWINDOW:2:20
+Input Read Pairs: 91711 Both Surviving: 88174 (96.14%) Forward Only Surviving: 2445 (2.67%) Reverse Only Surviving: 998 (1.09%) Dropped: 94 (0.10%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 8 -phred33 ../../../../input/CA2/CA2_r1.fastq ../../../../input/CA2/CA2_r2.fastq CA2_r1_trim_paired.fastq CA2_r1_trim_unpaired.fastq CA2_r2_trim_paired.fastq CA2_r2_trim_unpaired.fastq HEADCROP:3 SLIDINGWINDOW:2:30
+Input Read Pairs: 124271 Both Surviving: 99777 (80.29%) Forward Only Surviving: 13989 (11.26%) Reverse Only Surviving: 6973 (5.61%) Dropped: 3532 (2.84%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 8 -phred33 ../../../../input/CA2/CA2_r1.fastq ../../../../input/CA2/CA2_r2.fastq CA2_r1_trim_paired.fastq CA2_r1_trim_unpaired.fastq CA2_r2_trim_paired.fastq CA2_r2_trim_unpaired.fastq HEADCROP:3 SLIDINGWINDOW:2:25
+Input Read Pairs: 124271 Both Surviving: 111936 (90.07%) Forward Only Surviving: 8215 (6.61%) Reverse Only Surviving: 3096 (2.49%) Dropped: 1024 (0.82%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 8 -phred33 ../../../../input/CA2/CA2_r1.fastq ../../../../input/CA2/CA2_r2.fastq CA2_r1_trim_paired.fastq CA2_r1_trim_unpaired.fastq CA2_r2_trim_paired.fastq CA2_r2_trim_unpaired.fastq HEADCROP:3 SLIDINGWINDOW:2:20
+Input Read Pairs: 124271 Both Surviving: 119880 (96.47%) Forward Only Surviving: 3200 (2.58%) Reverse Only Surviving: 1097 (0.88%) Dropped: 94 (0.08%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 8 -phred33 ../../../../input/CA3/CA3_r1.fastq ../../../../input/CA3/CA3_r2.fastq CA3_r1_trim_paired.fastq CA3_r1_trim_unpaired.fastq CA3_r2_trim_paired.fastq CA3_r2_trim_unpaired.fastq HEADCROP:3 SLIDINGWINDOW:2:30
+Input Read Pairs: 95897 Both Surviving: 76973 (80.27%) Forward Only Surviving: 10789 (11.25%) Reverse Only Surviving: 5329 (5.56%) Dropped: 2806 (2.93%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 8 -phred33 ../../../../input/CA3/CA3_r1.fastq ../../../../input/CA3/CA3_r2.fastq CA3_r1_trim_paired.fastq CA3_r1_trim_unpaired.fastq CA3_r2_trim_paired.fastq CA3_r2_trim_unpaired.fastq HEADCROP:3 SLIDINGWINDOW:2:25
+Input Read Pairs: 95897 Both Surviving: 86244 (89.93%) Forward Only Surviving: 6559 (6.84%) Reverse Only Surviving: 2293 (2.39%) Dropped: 801 (0.84%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 8 -phred33 ../../../../input/CA3/CA3_r1.fastq ../../../../input/CA3/CA3_r2.fastq CA3_r1_trim_paired.fastq CA3_r1_trim_unpaired.fastq CA3_r2_trim_paired.fastq CA3_r2_trim_unpaired.fastq HEADCROP:3 SLIDINGWINDOW:2:20
+Input Read Pairs: 95897 Both Surviving: 92579 (96.54%) Forward Only Surviving: 2380 (2.48%) Reverse Only Surviving: 864 (0.90%) Dropped: 74 (0.08%)
+TrimmomaticPE: Completed successfully
+java -Djava.library.path=/ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/jni/ -ea -Xmx1000m -Xmx1000m -cp /ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/current/ jgi.BBMerge in1=../../../../temp/trimmed_reads/trimmed_CA1/qual_30/CA1_r1_trim_paired.fastq in2=../../../../temp/trimmed_reads/trimmed_CA1/qual_30/CA1_r2_trim_paired.fastq out=CA1_bbmerge_trim.fastq outu=unmerged_CA1_bbmerge_trim.fastq outinsert=insert_length.txt ihist=len_hist.txt strict=t
+Executing jgi.BBMerge [in1=../../../../temp/trimmed_reads/trimmed_CA1/qual_30/CA1_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA1/qual_30/CA1_r2_trim_paired.fastq, out=CA1_bbmerge_trim.fastq, outu=unmerged_CA1_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt, strict=t]
+
+BBMerge version 36.38
+Revised arguments: [maxbad=4, margin=3, minqo=8, qualiters=2, ratiomode=t, flatmode=f, minentropy=42, minoverlap0=7, minoverlap=11, maxratio=0.075, ratiomargin=7.5, ratiooffset=0.55, ratiominoverlapreduction=4, efilter=4, pfilter=0.0008, minsecondratio=0.12, minapproxoverlap=24, in1=../../../../temp/trimmed_reads/trimmed_CA1/qual_30/CA1_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA1/qual_30/CA1_r2_trim_paired.fastq, out=CA1_bbmerge_trim.fastq, outu=unmerged_CA1_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt]
+
+Writing mergable reads merged.
+Started output threads.
+Total time: 0.711 seconds.
+
+Pairs:               	72347
+Joined:              	41199   	56.946%
+Ambiguous:           	31148   	43.054%
+No Solution:         	0       	0.000%
+Too Short:           	0       	0.000%
+
+Avg Insert:          	141.3
+Standard Deviation:  	7.0
+Mode:                	144
+
+Insert range:        	67 - 268
+90th percentile:     	144
+75th percentile:     	144
+50th percentile:     	143
+25th percentile:     	142
+10th percentile:     	137
+java -Djava.library.path=/ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/jni/ -ea -Xmx1000m -Xmx1000m -cp /ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/current/ jgi.BBMerge in1=../../../../temp/trimmed_reads/trimmed_CA1/qual_25/CA1_r1_trim_paired.fastq in2=../../../../temp/trimmed_reads/trimmed_CA1/qual_25/CA1_r2_trim_paired.fastq out=CA1_bbmerge_trim.fastq outu=unmerged_CA1_bbmerge_trim.fastq outinsert=insert_length.txt ihist=len_hist.txt strict=t
+Executing jgi.BBMerge [in1=../../../../temp/trimmed_reads/trimmed_CA1/qual_25/CA1_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA1/qual_25/CA1_r2_trim_paired.fastq, out=CA1_bbmerge_trim.fastq, outu=unmerged_CA1_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt, strict=t]
+
+BBMerge version 36.38
+Revised arguments: [maxbad=4, margin=3, minqo=8, qualiters=2, ratiomode=t, flatmode=f, minentropy=42, minoverlap0=7, minoverlap=11, maxratio=0.075, ratiomargin=7.5, ratiooffset=0.55, ratiominoverlapreduction=4, efilter=4, pfilter=0.0008, minsecondratio=0.12, minapproxoverlap=24, in1=../../../../temp/trimmed_reads/trimmed_CA1/qual_25/CA1_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA1/qual_25/CA1_r2_trim_paired.fastq, out=CA1_bbmerge_trim.fastq, outu=unmerged_CA1_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt]
+
+Writing mergable reads merged.
+Started output threads.
+Total time: 0.653 seconds.
+
+Pairs:               	81781
+Joined:              	57138   	69.867%
+Ambiguous:           	24642   	30.132%
+No Solution:         	1       	0.001%
+Too Short:           	0       	0.000%
+
+Avg Insert:          	141.4
+Standard Deviation:  	7.0
+Mode:                	144
+
+Insert range:        	58 - 268
+90th percentile:     	144
+75th percentile:     	144
+50th percentile:     	143
+25th percentile:     	142
+10th percentile:     	137
+java -Djava.library.path=/ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/jni/ -ea -Xmx1000m -Xmx1000m -cp /ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/current/ jgi.BBMerge in1=../../../../temp/trimmed_reads/trimmed_CA1/qual_20/CA1_r1_trim_paired.fastq in2=../../../../temp/trimmed_reads/trimmed_CA1/qual_20/CA1_r2_trim_paired.fastq out=CA1_bbmerge_trim.fastq outu=unmerged_CA1_bbmerge_trim.fastq outinsert=insert_length.txt ihist=len_hist.txt strict=t
+Executing jgi.BBMerge [in1=../../../../temp/trimmed_reads/trimmed_CA1/qual_20/CA1_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA1/qual_20/CA1_r2_trim_paired.fastq, out=CA1_bbmerge_trim.fastq, outu=unmerged_CA1_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt, strict=t]
+
+BBMerge version 36.38
+Revised arguments: [maxbad=4, margin=3, minqo=8, qualiters=2, ratiomode=t, flatmode=f, minentropy=42, minoverlap0=7, minoverlap=11, maxratio=0.075, ratiomargin=7.5, ratiooffset=0.55, ratiominoverlapreduction=4, efilter=4, pfilter=0.0008, minsecondratio=0.12, minapproxoverlap=24, in1=../../../../temp/trimmed_reads/trimmed_CA1/qual_20/CA1_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA1/qual_20/CA1_r2_trim_paired.fastq, out=CA1_bbmerge_trim.fastq, outu=unmerged_CA1_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt]
+
+Writing mergable reads merged.
+Started output threads.
+Total time: 0.710 seconds.
+
+Pairs:               	88174
+Joined:              	69570   	78.901%
+Ambiguous:           	18590   	21.083%
+No Solution:         	14       	0.016%
+Too Short:           	0       	0.000%
+
+Avg Insert:          	141.4
+Standard Deviation:  	7.1
+Mode:                	144
+
+Insert range:        	58 - 268
+90th percentile:     	144
+75th percentile:     	144
+50th percentile:     	143
+25th percentile:     	142
+10th percentile:     	137
+java -Djava.library.path=/ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/jni/ -ea -Xmx1000m -Xmx1000m -cp /ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/current/ jgi.BBMerge in1=../../../../temp/trimmed_reads/trimmed_CA2/qual_30/CA2_r1_trim_paired.fastq in2=../../../../temp/trimmed_reads/trimmed_CA2/qual_30/CA2_r2_trim_paired.fastq out=CA2_bbmerge_trim.fastq outu=unmerged_CA2_bbmerge_trim.fastq outinsert=insert_length.txt ihist=len_hist.txt strict=t
+Executing jgi.BBMerge [in1=../../../../temp/trimmed_reads/trimmed_CA2/qual_30/CA2_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA2/qual_30/CA2_r2_trim_paired.fastq, out=CA2_bbmerge_trim.fastq, outu=unmerged_CA2_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt, strict=t]
+
+BBMerge version 36.38
+Revised arguments: [maxbad=4, margin=3, minqo=8, qualiters=2, ratiomode=t, flatmode=f, minentropy=42, minoverlap0=7, minoverlap=11, maxratio=0.075, ratiomargin=7.5, ratiooffset=0.55, ratiominoverlapreduction=4, efilter=4, pfilter=0.0008, minsecondratio=0.12, minapproxoverlap=24, in1=../../../../temp/trimmed_reads/trimmed_CA2/qual_30/CA2_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA2/qual_30/CA2_r2_trim_paired.fastq, out=CA2_bbmerge_trim.fastq, outu=unmerged_CA2_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt]
+
+Writing mergable reads merged.
+Started output threads.
+Total time: 0.639 seconds.
+
+Pairs:               	99777
+Joined:              	57778   	57.907%
+Ambiguous:           	41999   	42.093%
+No Solution:         	0       	0.000%
+Too Short:           	0       	0.000%
+
+Avg Insert:          	142.5
+Standard Deviation:  	6.0
+Mode:                	144
+
+Insert range:        	63 - 267
+90th percentile:     	144
+75th percentile:     	144
+50th percentile:     	144
+25th percentile:     	143
+10th percentile:     	141
+java -Djava.library.path=/ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/jni/ -ea -Xmx1000m -Xmx1000m -cp /ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/current/ jgi.BBMerge in1=../../../../temp/trimmed_reads/trimmed_CA2/qual_25/CA2_r1_trim_paired.fastq in2=../../../../temp/trimmed_reads/trimmed_CA2/qual_25/CA2_r2_trim_paired.fastq out=CA2_bbmerge_trim.fastq outu=unmerged_CA2_bbmerge_trim.fastq outinsert=insert_length.txt ihist=len_hist.txt strict=t
+Executing jgi.BBMerge [in1=../../../../temp/trimmed_reads/trimmed_CA2/qual_25/CA2_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA2/qual_25/CA2_r2_trim_paired.fastq, out=CA2_bbmerge_trim.fastq, outu=unmerged_CA2_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt, strict=t]
+
+BBMerge version 36.38
+Revised arguments: [maxbad=4, margin=3, minqo=8, qualiters=2, ratiomode=t, flatmode=f, minentropy=42, minoverlap0=7, minoverlap=11, maxratio=0.075, ratiomargin=7.5, ratiooffset=0.55, ratiominoverlapreduction=4, efilter=4, pfilter=0.0008, minsecondratio=0.12, minapproxoverlap=24, in1=../../../../temp/trimmed_reads/trimmed_CA2/qual_25/CA2_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA2/qual_25/CA2_r2_trim_paired.fastq, out=CA2_bbmerge_trim.fastq, outu=unmerged_CA2_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt]
+
+Writing mergable reads merged.
+Started output threads.
+Total time: 0.964 seconds.
+
+Pairs:               	111936
+Joined:              	79234   	70.785%
+Ambiguous:           	32702   	29.215%
+No Solution:         	0       	0.000%
+Too Short:           	0       	0.000%
+
+Avg Insert:          	142.5
+Standard Deviation:  	6.1
+Mode:                	144
+
+Insert range:        	63 - 267
+90th percentile:     	144
+75th percentile:     	144
+50th percentile:     	144
+25th percentile:     	143
+10th percentile:     	141
+java -Djava.library.path=/ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/jni/ -ea -Xmx1000m -Xmx1000m -cp /ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/current/ jgi.BBMerge in1=../../../../temp/trimmed_reads/trimmed_CA2/qual_20/CA2_r1_trim_paired.fastq in2=../../../../temp/trimmed_reads/trimmed_CA2/qual_20/CA2_r2_trim_paired.fastq out=CA2_bbmerge_trim.fastq outu=unmerged_CA2_bbmerge_trim.fastq outinsert=insert_length.txt ihist=len_hist.txt strict=t
+Executing jgi.BBMerge [in1=../../../../temp/trimmed_reads/trimmed_CA2/qual_20/CA2_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA2/qual_20/CA2_r2_trim_paired.fastq, out=CA2_bbmerge_trim.fastq, outu=unmerged_CA2_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt, strict=t]
+
+BBMerge version 36.38
+Revised arguments: [maxbad=4, margin=3, minqo=8, qualiters=2, ratiomode=t, flatmode=f, minentropy=42, minoverlap0=7, minoverlap=11, maxratio=0.075, ratiomargin=7.5, ratiooffset=0.55, ratiominoverlapreduction=4, efilter=4, pfilter=0.0008, minsecondratio=0.12, minapproxoverlap=24, in1=../../../../temp/trimmed_reads/trimmed_CA2/qual_20/CA2_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA2/qual_20/CA2_r2_trim_paired.fastq, out=CA2_bbmerge_trim.fastq, outu=unmerged_CA2_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt]
+
+Writing mergable reads merged.
+Started output threads.
+Total time: 1.161 seconds.
+
+Pairs:               	119880
+Joined:              	96235   	80.276%
+Ambiguous:           	23637   	19.717%
+No Solution:         	8       	0.007%
+Too Short:           	0       	0.000%
+
+Avg Insert:          	142.5
+Standard Deviation:  	6.2
+Mode:                	144
+
+Insert range:        	55 - 267
+90th percentile:     	144
+75th percentile:     	144
+50th percentile:     	144
+25th percentile:     	143
+10th percentile:     	141
+java -Djava.library.path=/ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/jni/ -ea -Xmx1000m -Xmx1000m -cp /ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/current/ jgi.BBMerge in1=../../../../temp/trimmed_reads/trimmed_CA3/qual_30/CA3_r1_trim_paired.fastq in2=../../../../temp/trimmed_reads/trimmed_CA3/qual_30/CA3_r2_trim_paired.fastq out=CA3_bbmerge_trim.fastq outu=unmerged_CA3_bbmerge_trim.fastq outinsert=insert_length.txt ihist=len_hist.txt strict=t
+Executing jgi.BBMerge [in1=../../../../temp/trimmed_reads/trimmed_CA3/qual_30/CA3_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA3/qual_30/CA3_r2_trim_paired.fastq, out=CA3_bbmerge_trim.fastq, outu=unmerged_CA3_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt, strict=t]
+
+BBMerge version 36.38
+Revised arguments: [maxbad=4, margin=3, minqo=8, qualiters=2, ratiomode=t, flatmode=f, minentropy=42, minoverlap0=7, minoverlap=11, maxratio=0.075, ratiomargin=7.5, ratiooffset=0.55, ratiominoverlapreduction=4, efilter=4, pfilter=0.0008, minsecondratio=0.12, minapproxoverlap=24, in1=../../../../temp/trimmed_reads/trimmed_CA3/qual_30/CA3_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA3/qual_30/CA3_r2_trim_paired.fastq, out=CA3_bbmerge_trim.fastq, outu=unmerged_CA3_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt]
+
+Writing mergable reads merged.
+Started output threads.
+Total time: 0.654 seconds.
+
+Pairs:               	76973
+Joined:              	45037   	58.510%
+Ambiguous:           	31936   	41.490%
+No Solution:         	0       	0.000%
+Too Short:           	0       	0.000%
+
+Avg Insert:          	141.6
+Standard Deviation:  	11.6
+Mode:                	144
+
+Insert range:        	48 - 264
+90th percentile:     	144
+75th percentile:     	144
+50th percentile:     	144
+25th percentile:     	143
+10th percentile:     	137
+java -Djava.library.path=/ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/jni/ -ea -Xmx1000m -Xmx1000m -cp /ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/current/ jgi.BBMerge in1=../../../../temp/trimmed_reads/trimmed_CA3/qual_25/CA3_r1_trim_paired.fastq in2=../../../../temp/trimmed_reads/trimmed_CA3/qual_25/CA3_r2_trim_paired.fastq out=CA3_bbmerge_trim.fastq outu=unmerged_CA3_bbmerge_trim.fastq outinsert=insert_length.txt ihist=len_hist.txt strict=t
+Executing jgi.BBMerge [in1=../../../../temp/trimmed_reads/trimmed_CA3/qual_25/CA3_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA3/qual_25/CA3_r2_trim_paired.fastq, out=CA3_bbmerge_trim.fastq, outu=unmerged_CA3_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt, strict=t]
+
+BBMerge version 36.38
+Revised arguments: [maxbad=4, margin=3, minqo=8, qualiters=2, ratiomode=t, flatmode=f, minentropy=42, minoverlap0=7, minoverlap=11, maxratio=0.075, ratiomargin=7.5, ratiooffset=0.55, ratiominoverlapreduction=4, efilter=4, pfilter=0.0008, minsecondratio=0.12, minapproxoverlap=24, in1=../../../../temp/trimmed_reads/trimmed_CA3/qual_25/CA3_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA3/qual_25/CA3_r2_trim_paired.fastq, out=CA3_bbmerge_trim.fastq, outu=unmerged_CA3_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt]
+
+Writing mergable reads merged.
+Started output threads.
+Total time: 0.704 seconds.
+
+Pairs:               	86244
+Joined:              	61343   	71.127%
+Ambiguous:           	24901   	28.873%
+No Solution:         	0       	0.000%
+Too Short:           	0       	0.000%
+
+Avg Insert:          	141.7
+Standard Deviation:  	12.1
+Mode:                	144
+
+Insert range:        	48 - 269
+90th percentile:     	144
+75th percentile:     	144
+50th percentile:     	144
+25th percentile:     	143
+10th percentile:     	137
+java -Djava.library.path=/ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/jni/ -ea -Xmx1000m -Xmx1000m -cp /ysm-gpfs/pi/gerstein/pmm49/tools/bbmap/current/ jgi.BBMerge in1=../../../../temp/trimmed_reads/trimmed_CA3/qual_20/CA3_r1_trim_paired.fastq in2=../../../../temp/trimmed_reads/trimmed_CA3/qual_20/CA3_r2_trim_paired.fastq out=CA3_bbmerge_trim.fastq outu=unmerged_CA3_bbmerge_trim.fastq outinsert=insert_length.txt ihist=len_hist.txt strict=t
+Executing jgi.BBMerge [in1=../../../../temp/trimmed_reads/trimmed_CA3/qual_20/CA3_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA3/qual_20/CA3_r2_trim_paired.fastq, out=CA3_bbmerge_trim.fastq, outu=unmerged_CA3_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt, strict=t]
+
+BBMerge version 36.38
+Revised arguments: [maxbad=4, margin=3, minqo=8, qualiters=2, ratiomode=t, flatmode=f, minentropy=42, minoverlap0=7, minoverlap=11, maxratio=0.075, ratiomargin=7.5, ratiooffset=0.55, ratiominoverlapreduction=4, efilter=4, pfilter=0.0008, minsecondratio=0.12, minapproxoverlap=24, in1=../../../../temp/trimmed_reads/trimmed_CA3/qual_20/CA3_r1_trim_paired.fastq, in2=../../../../temp/trimmed_reads/trimmed_CA3/qual_20/CA3_r2_trim_paired.fastq, out=CA3_bbmerge_trim.fastq, outu=unmerged_CA3_bbmerge_trim.fastq, outinsert=insert_length.txt, ihist=len_hist.txt]
+
+Writing mergable reads merged.
+Started output threads.
+Total time: 0.821 seconds.
+
+Pairs:               	92579
+Joined:              	73940   	79.867%
+Ambiguous:           	18629   	20.122%
+No Solution:         	10       	0.011%
+Too Short:           	0       	0.000%
+
+Avg Insert:          	141.8
+Standard Deviation:  	12.4
+Mode:                	144
+
+Insert range:        	48 - 269
+90th percentile:     	144
+75th percentile:     	144
+50th percentile:     	144
+25th percentile:     	143
+10th percentile:     	137

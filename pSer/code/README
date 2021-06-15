@@ -1,0 +1,13 @@
+Output folder organization:
+First level of organization splits the data based on the quality score used for filtering.
+Second level of organization splits the data based on whether barcode sequences are kept or trimmed.
+
+Output file description for cluster_sort folder:
+bbseq_[qual]_[sample].txt == Contains sequences that have the degenerate base sequences at the end removed along with the assigned group. Depending on whether the barcode option is invoked or not it might also be trimmed to just the variable region of the read.
+bbseq_clust_sorted_[qual]_[sample].txt == Contains processed reads that have been clustered based on their group and sequence and sorted.
+missedSeqs_[qual]_[sample].txt == Contains all the reads that can't be processed and assigned properly as well as the total number of misses.
+sorted_debug_data_[qual]_[sample].txt ==
+bbseq_clust_[qual]_[sample].txt == Contains processed reads that have been clustered based on their group and sequence.
+debug_data_[qual]_[sample].txt == Contains data on why reads didn't pass through processing.
+sorted_clust_w_abund_[qual]_[sample].txt = Contains processed reads that have been sorted based on their group and sequence then sorted. It also contains the percentage of the group that each sequence represents.
+
